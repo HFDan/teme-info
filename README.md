@@ -3,6 +3,7 @@
 <p float="left">
   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fmrfz%2Fimages%2F6%2F68%2FKal%2527tsit.png%2Frevision%2Flatest%3Fcb%3D20190831014830&f=1&nofb=1" width="128px" height="128px">
   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fowwya.com%2Fwp-content%2Fuploads%2F2020%2F05%2FArknights-W-Wiki-Guide.png&f=1&nofb=1" width="128px" height="128px">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgamepress.gg%2Farknights%2Fsites%2Farknights%2Ffiles%2F2020-09%2Fchar_350_surtr_1_0.png&f=1&nofb=1" width="128px" height="128px">
 </p>
 
 ###### See a pattern here?
