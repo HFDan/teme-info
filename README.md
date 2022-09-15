@@ -10,7 +10,7 @@ Tested on the following:
 
 ## Other notes
 
-Concieved to _sick beats_ from the Arknights soundtrack:
+Concieved to **_sick beats_** from the Arknights soundtrack:
 
 - ['Vigilo'](https://music.youtube.com/watch?v=LH0vVifRFNE&feature=share)
 - ['Renegade'](https://music.youtube.com/watch?v=qAkM8QGLbuo&feature=share)
