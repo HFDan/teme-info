@@ -10,6 +10,8 @@ Tested on the following:
 
 ## Other notes
 
+###### Remember to check out based\_ascii\_art.md
+
 Concieved to **_sick beats_** from the Arknights soundtrack:
 
 - ['Vigilo'](https://music.youtube.com/watch?v=LH0vVifRFNE&feature=share)
