@@ -23,6 +23,7 @@ Tested on the following:
 Concieved to **_sick beats_** from the Arknights soundtrack, _and more_...:
 
 - ['Vigilo'](https://music.youtube.com/watch?v=LH0vVifRFNE&feature=share)
+- ['Immutable'](https://open.spotify.com/track/2TRPuDIapRBVmnZGOHSILj?si=44e6041478094263)
 - ['Renegade'](https://music.youtube.com/watch?v=qAkM8QGLbuo&feature=share)
 - ['Radiant'](https://open.spotify.com/track/61DmKCuwyiSZMOo7k8C8pT?si=aabf40fe78e84c32)
 - ['Eternal Flame'](https://open.spotify.com/track/5dqVXsMW0N7u4XiskZAZlD?si=d61c4f0626b44214)
