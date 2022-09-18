@@ -22,11 +22,15 @@ Tested on the following:
 
 To compile C++:
 
-`compile++ <filename>.cpp -o <executableName>`
+```sh
+compile++ <filename>.cpp -o <executableName>
+```
 
 To compile C:
 
-`compile <filename>.c -o <executableName>`
+```sh
+compile <filename>.c -o <executableName>
+```
 
 ### On Windows
 
