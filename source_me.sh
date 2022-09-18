@@ -11,17 +11,17 @@ else
   CC="NONE"
 fi
 
-function compilepp() {
+function compile++() {
   "$CXX" -masm=intel -g -O0 -Wall -Wpedantic --std=c++20 $@
 }
 
-function compilec() {
+function compile() {
   "$CC" -masm=intel -g -O0 -Wall -Wpedantic --std=c11 $@
 }
 
 if [[ "$CC" != "NONE" ]]; then
   echo -e "C++ compiler autodetected as $(${CXX} --version | head -n 1)\nC compiler autodetected as $(${CC} --version | head -n 1)"
-  echo -e "Use \"compilepp\" to compile a C++ program and \"compilec\" to compile a C program"
+  echo -e "Use \"compile++\" to compile a C++ program and \"compile\" to compile a C program"
 else
   echo -e "No valid C/C++ compilers found"
 fi
