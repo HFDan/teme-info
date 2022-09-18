@@ -36,7 +36,7 @@ compile <filename>.c -o <executableName>
 
 Open the folder in a `Visual Studio Developer Powershell`.
 
-Compile with `cl /Od /Wall /std:c++20 /Zi <filename>.c/.cpp /Fe <executableName>`
+Compile with `cl.exe /Od /Wall /std:c++20 /Zi <filename>.c/.cpp /Fe <executableName>`
 
 ## Other notes
 
