@@ -16,6 +16,24 @@ Tested on the following:
 - clang 14.0.6
 - glibc 2.36-3
 
+## Usage
+
+### On linux
+
+To compile C++:
+
+`compile++ <filename>.cpp -o <executableName>`
+
+To compile C:
+
+`compile <filename>.c -o <executableName>`
+
+### On Windows
+
+Open the folder in a `Visual Studio Developer Powershell`.
+
+Compile with `cl /Od /Wall /std:c++20 /Zi <filename>.c/.cpp /Fe <executableName>`
+
 ## Other notes
 
 ###### Remember to check out based_ascii_art.md
