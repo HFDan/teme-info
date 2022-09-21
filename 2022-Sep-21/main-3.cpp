@@ -14,5 +14,6 @@ void func(uint32& num) {
     str = str[0] + str;
 
     num = std::stoi(str);
+    // Test change
 }
 #include "./include_2.hpp"
