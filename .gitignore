@@ -2,10 +2,10 @@
 *
 
 # Unignore all with ext
-|*.*
+!*.*
 
 # Unignore all dirs
-|*/
+!*/
 
 # Prerequisites
 *.d
