@@ -75,30 +75,35 @@ inline constexpr int nrDivizori(const int& x) {
     return div;
 }
 
-static int TimesFunctionWasCalled = 0;
 int main(int argc, char** argv) {
     freopen("atestat.in", "r", stdin);
     freopen("atestat.out", "w", stdout);
+
 
     int n;
     std::cin >> n;
 
     int* const arr = new int[n];
 
-    for (int i = 0; i < n; i++) {
-        int num;
-        std::cin >> num;
+    {
+        static int TimesFunctionWasCalled = 0;
+        for (int i = 0; i < n; i++) {
 
-        if (nrDivizori(num) > 4) {
-            inversareCifre(num);
-            TimesFunctionWasCalled++;
+            int num;
+            std::cin >> num;
+
+            if (nrDivizori(num) > 4) {
+                inversareCifre(num);
+                TimesFunctionWasCalled++;
+            }
+            arr[i] = num;
         }
-        arr[i] = num;
-    }
 
-    if (!TimesFunctionWasCalled) {
-        std::cout << "Nu au fost facute modificari" << std::endl;
-        return EXIT_SUCCESS;
+        if (!TimesFunctionWasCalled) {
+            std::cout << "Nu au fost facute modificari" << std::endl;
+            return EXIT_SUCCESS;
+        }
+
     }
 
     for (int i = 0; i < n; i++) {
