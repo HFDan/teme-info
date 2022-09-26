@@ -41,12 +41,16 @@ void inversareCifre(int& x, bool useStrings = false) {
         // We can do it the *math* way (yuck, cringe, 🤮)
         // Or we can do it the *fundular entertainment* way (Based, max0r reference) 
 
-        int digits[6] = {0}; // Yes, this works.
+        int digits[6] = {0}; // Yes, this works, but only with 0, nothing else.
         int iteratorBazat; // We will need this later
         for (iteratorBazat = 0; x > 0; iteratorBazat++) {
             digits[iteratorBazat] = x % 10;
             x /= 10;
         }
+
+        // This can be made "more efficient", but i dont have the time nor the motivation to do it.
+        // Just be glad it works, and never touch it again.
+        // This code gives me a headache...
 
         // We reverse the digits...
         for (int i = 0, j = iteratorBazat - 1; i <= j; j--, i++)
