@@ -71,3 +71,7 @@ Concieved to **_sick beats_** from the **Arknights soundtrack**, the **Helltaker
 - ['B.Y.O.B'](https://open.spotify.com/track/0EYOdF5FCkgOJJla8DI2Md?si=f853219f8b954207)
 
 And many more...
+
+## Release cycle
+
+After each **school year** ends, I will tag a github release.
