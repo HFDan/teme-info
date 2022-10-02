@@ -53,7 +53,7 @@ kys_t findPos() {
     maxE(E.first, E.second);
     maxV(V.first, V.second);
 
-    return kys_t(N, E, S, V);
+    return {N, E, S, V};
 }
 
 inline void interschimbare2elemente(const int& rand1, const int& col1, const int& rand2, const int& col2) {
