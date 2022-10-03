@@ -20,6 +20,11 @@ Tested on the following:
 - clang 14.0.6
 - glibc 2.36-3
 
+## Contributing
+
+Pull requests will probably be rejected. I dont care about this repo enough to manage PRs.
+It exists just so my classmates have cheating resources lmao :)
+
 ## Usage
 
 Just use CMake lmao. Executables are automatically added...
