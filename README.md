@@ -22,25 +22,7 @@ Tested on the following:
 
 ## Usage
 
-### On linux
-
-To compile C++:
-
-```sh
-compile++ <filename>.cpp -o <executableName>
-```
-
-To compile C:
-
-```sh
-compile <filename>.c -o <executableName>
-```
-
-### On Windows
-
-Open the folder in a `Visual Studio Developer Powershell`.
-
-Compile with `cl.exe /Od /Wall /std:c++20 /Zi <filename>.c/.cpp /Fe <executableName>`
+Just use CMake lmao. Executables are automatically added...
 
 ## Other notes
 
