@@ -70,3 +70,6 @@
 *.code-workspace
 
 *.ipynb
+
+playground/*
+!playground/README.md
