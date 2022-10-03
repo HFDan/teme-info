@@ -56,4 +56,4 @@ int nr_sa(int** a, int n, int m) {
     }
 
     return cont;
-}
+}int main() {return 0;}

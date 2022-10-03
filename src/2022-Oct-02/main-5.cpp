@@ -6,4 +6,4 @@ int multiplu(int a[], int n, int k) {
     }
 
     return cont;
-}
+}int main() {return 0;}

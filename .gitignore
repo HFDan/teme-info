@@ -72,4 +72,7 @@
 *.ipynb
 
 playground/*
+!include/*
 !playground/README.md
+!playground/CMakeLists.txt
+Build/*

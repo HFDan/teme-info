@@ -1,18 +1,2 @@
-If:
-    PathMatch: .*\.cpp
-
 CompileFlags:
-    Add: [--std=c++20]
-
----
-
-If:
-    PathMatch: .*\.c
-
-CompileFlags:
-    Add: [--std=c11]
-
----
-
-CompileFlags:
-    Add: [-Wall, -Wpedantic, -g, -O0, -masm=intel, -Wpessimizing-move, -Wredundant-move]
+  CompilationDatabase: ./Build

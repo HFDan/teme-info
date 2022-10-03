@@ -12,4 +12,4 @@ int count(int a[], int n) {
     }
 
     return cont;
-}
+}int main() {return 0;}

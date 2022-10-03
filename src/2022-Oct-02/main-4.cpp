@@ -16,4 +16,4 @@ int lmao(int num) {
     } 
 
     return rec;
-}
+}int main() {return 0;}

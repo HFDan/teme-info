@@ -18,4 +18,4 @@ int lmao(int n, int k) {
     }
 
     return numarul;
-}
+}int main() {return 0;}
