@@ -4,6 +4,7 @@
   <img alt="Mission sub rosa, Concealed en umbra, She will risk it for the lives that she has left behind" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fmrfz%2Fimages%2F6%2F68%2FKal%2527tsit.png%2Frevision%2Flatest%3Fcb%3D20190831014830&f=1&nofb=1" width="128px" height="128px">
   <img alt="I'm a bad girl, imma pull your strings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fowwya.com%2Fwp-content%2Fuploads%2F2020%2F05%2FArknights-W-Wiki-Guide.png&f=1&nofb=1" width="128px" height="128px">
   <img alt="Idk surtr's song. Sorry..." src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgamepress.gg%2Farknights%2Fsites%2Farknights%2Ffiles%2F2020-09%2Fchar_350_surtr_1_0.png&f=1&nofb=1" width="128px" height="128px">
+  <img alt="Mommy 2B!!" src="https://static.wikia.nocookie.net/nier/images/3/38/YoRHa_No.2_Type_B.png/revision/latest/scale-to-width-down/270?cb=20170322051325" width="64px" height="128px">
 </p>
 
 ###### See a pattern here?
