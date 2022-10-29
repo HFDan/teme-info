@@ -25,11 +25,7 @@ linie, toate numerele din șirul modificat. Dacă nu există numere cu mai mult 
 scrie în fișier, mesajul "nu au fost facute modificari"
 */
 
-#ifndef _WIN32
-#include <bits/stdc++.h>
-#else
-#include "./stdc++.h"
-#endif
+#include <cppminimal>
 
 // I am so tempted to use strings, so heres a toggle
 void inversareCifre(int& x, bool useStrings = false) {

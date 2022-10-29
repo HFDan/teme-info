@@ -6,9 +6,7 @@
 * numărul obținut prin eliminarea tuturor aparițiilor cifrei c.
 */
 #include "./include_1.hpp"
-#include <iostream>
-#include <string>
-#include <algorithm>
+#include <cppminimal>
 
 void P(uint32& n, const byte& c) {
     auto str = std::to_string(n);

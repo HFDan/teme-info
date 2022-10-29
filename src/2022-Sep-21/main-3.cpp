@@ -5,8 +5,7 @@
 */
 
 #include "./include_1.hpp"
-#include <iostream>
-#include <string>
+#include <cppminimal>
 
 void func(uint32& num) {
     auto str = std::to_string(num);

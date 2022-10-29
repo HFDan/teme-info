@@ -1,4 +1,4 @@
-#include <iostream>
+#include <cppminimal>
 
 void citireVecRec(int vec[], int idx, int sz) {
 

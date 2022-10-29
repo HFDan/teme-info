@@ -1,6 +1,4 @@
-#include <concepts>
-#include <cstdint>
-#include <cstddef>
+#include <cppminimal>
 
 // I love c++20
 template <typename T>

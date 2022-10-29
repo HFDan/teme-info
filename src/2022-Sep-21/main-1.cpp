@@ -5,7 +5,7 @@
 */
 
 #include "./include_1.hpp"
-#include <iostream>
+#include <cppminimal>
 
 void func(uint32 num, uint32& retVal) {
     do {

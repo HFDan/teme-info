@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <cppminimal>
 
 // Problema asta e oribila.
 // Vreau sa mor

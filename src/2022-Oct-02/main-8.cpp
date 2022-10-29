@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <cppminimal>
 
 int nr_sa(int** a, int n, int m) {
     int cont = 0;

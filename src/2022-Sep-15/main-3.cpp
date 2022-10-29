@@ -1,7 +1,7 @@
 /*
  * Să se scrie o funcție C++ care primește un parametru x și și afiseaza cifra maxima a lui x
  */
-#include <iostream>
+#include <cppminimal>
 
 static inline void nop() { __asm("nop"); }
 

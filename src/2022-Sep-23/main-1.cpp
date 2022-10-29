@@ -22,12 +22,7 @@ Programul scrie pe prima linie a fișierului atestat.out elementele tabloului mo
 Elementele tabloului care conțin cel puțin o cifră impară nu se modifică
 */
 
-// I hate this include
-#ifndef _WIN32
-#include <bits/stdc++.h>
-#else
-#include "./stdc++.h"
-#endif
+#include <cppminimal>
 
 bool verif(int num) {
     while (num != 0) {

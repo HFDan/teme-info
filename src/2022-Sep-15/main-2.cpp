@@ -2,8 +2,7 @@
  * Să se scrie o funcție C++ care primește doi parametri a și b și afiseaza numărul obținut prin concatenarea lui a cu b.
  */
 
-#include <iostream>
-#include <type_traits>
+#include <cppminimal>
 
 static inline void nop() { __asm("nop"); }
 
