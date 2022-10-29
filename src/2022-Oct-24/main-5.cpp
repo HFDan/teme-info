@@ -22,7 +22,9 @@ typename T::value_type sumaElementeVectori(T vec) {
 }
 
 template <typename T>
-requires (std::integral<T> || std::floating_point<T>)
+requires (std::integral<T> || std::floating_point<T> 
+// Check for + operator
+|| requires (T a) {a + a;})
 T sumaElementeVectori(T* vec, size_t sz) {
     T runningTotal = 0;
     for (size_t i = 0; i < sz; i++)
