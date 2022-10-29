@@ -5,7 +5,6 @@
 * Funcția întoarce tot prin intermediul parametrului n
 * numărul obținut prin eliminarea tuturor aparițiilor cifrei c.
 */
-#include "./include_1.hpp"
 #include <cppminimal>
 
 void P(uint32& n, const byte& c) {

@@ -3,8 +3,6 @@
  */
 #include <cppminimal>
 
-static inline void nop() { __asm("nop"); }
-
 void awesomeFunc(int x) {
   
   int max = 0;

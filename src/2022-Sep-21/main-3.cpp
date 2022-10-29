@@ -4,7 +4,6 @@
 * Funcția întoarce rezultatul prin intermediul aceluiași parametru n.
 */
 
-#include "./include_1.hpp"
 #include <cppminimal>
 
 void func(uint32& num) {

@@ -4,8 +4,6 @@
 
 #include <cppminimal>
 
-static inline void nop() { __asm("nop"); }
-
 template<typename T>
 void func(T a, T b) {
 

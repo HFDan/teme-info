@@ -4,7 +4,6 @@
 * Funcția va întoarce rezultatele prin intermediul unor parametri de ieşire.
 */
 
-#include "./include_1.hpp"
 #include <cppminimal>
 
 void func(uint32 num, uint32& pare, uint32& impare) {

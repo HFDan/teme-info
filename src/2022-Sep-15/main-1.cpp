@@ -4,8 +4,6 @@
 
 #include <cppminimal>
 
-static inline void nop() { __asm("nop"); }
-
 void func(int a, int b) {
   std::cout << (a > b ? a : b) << std::endl;
 }
