@@ -10,7 +10,7 @@ int nr_sa(int** a, int n, int m) {
             int numar = a[i][j];
 
             // calculam
-            unsigned char flags = 0b00000000;
+            std::byte flags{0b00000000};
 
             // format:
             // 0b<cel mai mare de pe coloana><cel mai mic de pe coloana><cel mai mare de pe rand><cel mai mic de pe rand>
@@ -27,10 +27,10 @@ int nr_sa(int** a, int n, int m) {
             }
 
             if (numar == colmin)
-                flags |= 0b01000000;
+                flags |= std::byte{0b01000000};
             
             if (numar == colmax)
-                flags |= 0b10000000;
+                flags |= std::byte{0b10000000};
 
             
             int randmax = INT_MIN;
@@ -44,12 +44,12 @@ int nr_sa(int** a, int n, int m) {
             }
 
             if (numar == randmin)
-                flags |= 0b00010000;
+                flags |= std::byte{0b00010000};
 
             if (numar == randmax)
-                flags |= 0b00100000;
+                flags |= std::byte{0b00100000};
 
-            if (flags == 0b10010000 || flags == 0b01100000)
+            if (flags == std::byte{0b10010000} || flags == std::byte{0b01100000})
                 cont++;
 
         }
