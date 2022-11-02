@@ -19,7 +19,7 @@ Tested on the following:
 
 - Arch Linux amd64
 - clang 14.0.6
-- glibc 2.36-3
+- glibc 2.36-6
 
 ## Contributing
 
