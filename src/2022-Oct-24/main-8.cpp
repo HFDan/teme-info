@@ -1,8 +1,8 @@
-int SumaCifreRec(int n, int suma = 0) {
-    if (n) {
-        return SumaCifreRec(n / 10, suma + (n % 10));
+int SumaCifreRec(int n) {
+    if (n < 10) {
+        return n % 10;
     } else {
-        return suma;
+        return (n % 10) + SumaCifreRec(n / 10);
     }
 }
 

@@ -1,7 +1,9 @@
+#include <cppminimal>
+
 int sumaVector(int vec[], int left, int right) {
 
     if (left != right) {
-        int m = (left + right) / 2;
+        int m = std::midpoint(left, right);
         int a = sumaVector(vec, left, m);
         int b = sumaVector(vec, m + 1, right);
 
@@ -14,7 +16,7 @@ int sumaVector(int vec[], int left, int right) {
 int multVector(int vec[], int left, int right) {
 
     if (left != right) {
-        int m = (left + right) / 2;
+        int m = std::midpoint(left, right);
         int a = multVector(vec, left, m);
         int b = multVector(vec, m + 1, right);
 

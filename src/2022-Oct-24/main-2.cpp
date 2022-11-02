@@ -1,13 +1,13 @@
-int SumaCifreRec(int n, int pare = 0, int impare = 0) {
-    if (n) {
-        if ((n % 10) % 2 == 0) {
-            return SumaCifreRec(n/10, pare + 1, impare);
-        } else {
-            return SumaCifreRec(n/10, pare, impare + 1);
-        }
+int SumaCifreRec(int n) {
+    if (n < 10)
+        return (n % 10) % 2 == 0 ? 1 : -1;
+
+    if ((n % 10) % 2 == 0) {
+        return 1 + SumaCifreRec(n / 10);
     } else {
-        return pare - impare;
+        return -1 + SumaCifreRec(n / 10);
     }
+
 }
 
 int main() {

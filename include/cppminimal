@@ -19,6 +19,7 @@
 #include <concepts>
 #include <type_traits>
 #include <cstddef>
+#include <numeric>
 
 // Adding some stuff 
 typedef uint8_t byte;

@@ -1,12 +1,11 @@
-int nrCifreDiv3(int n, int cifreDiv = 0) {
-    if (n) {
-        if ((n%10) % 3 == 0) {
-            return nrCifreDiv3(n / 10, cifreDiv + 1);
-        } else {
-            return nrCifreDiv3(n / 10, cifreDiv);
-        }
+int nrCifreDiv3(int n) {
+    if (n < 10)
+        return (n % 10) % 3 == 0 ? 1 : 0;
+
+    if ((n % 10) % 3 == 0) {
+        return 1 + nrCifreDiv3(n / 10);
     } else {
-        return cifreDiv;
+        return 0 + nrCifreDiv3(n / 10);
     }
 }
 

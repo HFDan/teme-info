@@ -31,6 +31,16 @@ T sumaElementeVectori(T* vec, size_t sz) {
     return runningTotal;
 }
 
+template<typename T>
+requires (std::integral<T> || std::floating_point<T> || requires (T a) {a + a;})
+T sumaElemVectoriRec(T* vec, size_t sz) {
+    if (sz == 1) {
+        return vec[sz - 1];
+    } else {
+        return vec[sz - 1] + sumaElemVectoriRec(vec, sz - 1);
+    }
+}
+
 int main() {
     return 0;
 }
