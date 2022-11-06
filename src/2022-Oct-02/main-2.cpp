@@ -14,4 +14,5 @@ int sumafactcif(int num) {
     } while (num != 0);
 
     return suma;
-}int main() {return 0;}
+}
+int main() { return 0; }

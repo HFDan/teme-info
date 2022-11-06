@@ -1,8 +1,8 @@
 /*
-* Să se scrie o funcție C++ care să determine suma cifrelor unui număr natural
-* transmis ca parametru. 
-* Funcția întoarce rezultatul prin intermediul unui parametru de ieşire. 
-*/
+ * Să se scrie o funcție C++ care să determine suma cifrelor unui număr natural
+ * transmis ca parametru.
+ * Funcția întoarce rezultatul prin intermediul unui parametru de ieşire.
+ */
 
 #include <cppminimal>
 

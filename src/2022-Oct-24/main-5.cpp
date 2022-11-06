@@ -2,7 +2,8 @@
 
 // I love c++20
 template <typename T>
-concept isStdContainerCompatible = (std::integral<typename T::value_type> || std::floating_point<typename T::value_type>) && requires (T a) {
+concept isStdContainerCompatible =
+    (std::integral<typename T::value_type> || std::floating_point<typename T::value_type>)&&requires(T a) {
     a.begin();
     a.end();
     a.size();
@@ -20,20 +21,20 @@ typename T::value_type sumaElementeVectori(T vec) {
 }
 
 template <typename T>
-requires (std::integral<T> || std::floating_point<T> 
-// Check for + operator
-|| requires (T a) {a + a;})
-T sumaElementeVectori(T* vec, size_t sz) {
+requires(
+    std::integral<T> ||
+    std::floating_point<T>
+    // Check for + operator
+    || requires(T a) { a + a; }) T sumaElementeVectori(T* vec, size_t sz) {
     T runningTotal = 0;
-    for (size_t i = 0; i < sz; i++)
-        runningTotal += vec[i];
+    for (size_t i = 0; i < sz; i++) runningTotal += vec[i];
 
     return runningTotal;
 }
 
-template<typename T>
-requires (std::integral<T> || std::floating_point<T> || requires (T a) {a + a;})
-T sumaElemVectoriRec(T* vec, size_t sz) {
+template <typename T>
+requires(std::integral<T> || std::floating_point<T> || requires(T a) { a + a; }) T
+    sumaElemVectoriRec(T* vec, size_t sz) {
     if (sz == 1) {
         return vec[sz - 1];
     } else {
@@ -41,6 +42,4 @@ T sumaElemVectoriRec(T* vec, size_t sz) {
     }
 }
 
-int main() {
-    return 0;
-}
+int main() { return 0; }

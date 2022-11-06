@@ -26,13 +26,11 @@ Elementele tabloului care conțin cel puțin o cifră impară nu se modifică
 
 bool verif(int num) {
     while (num != 0) {
-
-        if ((num % 10) % 2 != 0)
-            return false;
+        if ((num % 10) % 2 != 0) return false;
 
         num /= 10;
     }
-    
+
     return true;
 }
 
@@ -46,8 +44,7 @@ void modif(int& x) {
     while (x != 0) {
         uint8_t cifra = x % 10;
 
-        if (cifra % 2 == 0)
-            cifra /= 2;
+        if (cifra % 2 == 0) cifra /= 2;
 
         numaruPeDos += cifra;
         numaruPeDos *= 10;
@@ -72,7 +69,6 @@ void modif(int& x) {
 }
 
 int main(int argc, char** argv) {
-
     std::ifstream file("atestat.in");
     std::ofstream out("atestat.out");
     long sz;
@@ -82,9 +78,8 @@ int main(int argc, char** argv) {
         int nr;
         file >> nr;
 
-        if (verif(nr))
-            modif(nr);
-        
+        if (verif(nr)) modif(nr);
+
         out << nr << std::endl;
     }
 

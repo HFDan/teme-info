@@ -13,7 +13,8 @@ int lmao(int num) {
         for (int j = 0; j < frec[i]; j++) {
             rec = rec * 10 + i;
         }
-    } 
+    }
 
     return rec;
-}int main() {return 0;}
+}
+int main() { return 0; }

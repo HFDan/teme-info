@@ -1,2 +1,19 @@
 CompileFlags:
   CompilationDatabase: ./Build
+
+Diagnostics:
+  ClangTidy:
+    Add:
+      - "bugprone-*"
+      - "hicpp-*"
+      - "misc-*"
+      - "modernize-*"
+      - "performance-*"
+      - "portability-*"
+      - "readability-*"
+    Remove:
+      - "readability-else-after-return"
+      - "modernize-use-trailing-return-type"
+      - "readability-braces-around-statements"
+      - "misc-no-recursion"
+      - "hicpp-braces-around-statements"

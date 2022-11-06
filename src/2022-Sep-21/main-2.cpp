@@ -1,8 +1,8 @@
 /*
-* Să se scrie o funcție C++ care să determine suma cifrelor pare și suma
-* cifrelor impare pentru un număr natural transmis ca parametru.
-* Funcția va întoarce rezultatele prin intermediul unor parametri de ieşire.
-*/
+ * Să se scrie o funcție C++ care să determine suma cifrelor pare și suma
+ * cifrelor impare pentru un număr natural transmis ca parametru.
+ * Funcția va întoarce rezultatele prin intermediul unor parametri de ieşire.
+ */
 
 #include <cppminimal>
 

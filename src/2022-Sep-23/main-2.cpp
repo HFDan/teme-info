@@ -35,10 +35,10 @@ void inversareCifre(int& x, bool useStrings = false) {
         x = std::stoi(str);
     } else {
         // We can do it the *math* way (yuck, cringe, 🤮)
-        // Or we can do it the *fundular entertainment* way (Based, max0r reference) 
+        // Or we can do it the *fundular entertainment* way (Based, max0r reference)
 
-        int digits[6] = {0}; // Yes, this works, but only with 0, nothing else.
-        int iteratorBazat; // We will need this later
+        int digits[6] = {0};  // Yes, this works, but only with 0, nothing else.
+        int iteratorBazat;    // We will need this later
         for (iteratorBazat = 0; x > 0; iteratorBazat++) {
             digits[iteratorBazat] = x % 10;
             x /= 10;
@@ -49,13 +49,11 @@ void inversareCifre(int& x, bool useStrings = false) {
         // This code gives me a headache...
 
         // We reverse the digits...
-        for (int i = 0, j = iteratorBazat - 1; i <= j; j--, i++)
-            std::swap(digits[i], digits[j]);
+        for (int i = 0, j = iteratorBazat - 1; i <= j; j--, i++) std::swap(digits[i], digits[j]);
 
         // We reverse what we need...
-        for (int i = 1, j = iteratorBazat - 1; i <= j; j--, i++)
-            std::swap(digits[i], digits[j]);
-        
+        for (int i = 1, j = iteratorBazat - 1; i <= j; j--, i++) std::swap(digits[i], digits[j]);
+
         // Rebuild the number
         x = 0;
         for (int i = 0; i < iteratorBazat; i++) {
@@ -64,13 +62,11 @@ void inversareCifre(int& x, bool useStrings = false) {
     }
 }
 
-
 inline constexpr int nrDivizori(const int& x) {
     int div = 0;
 
     for (int i = 1; i <= x; i++)
-        if (x % i == 0)
-            div++;
+        if (x % i == 0) div++;
 
     return div;
 }
@@ -78,7 +74,6 @@ inline constexpr int nrDivizori(const int& x) {
 int main(int argc, char** argv) {
     freopen("atestat.in", "r", stdin);
     freopen("atestat.out", "w", stdout);
-
 
     int n;
     std::cin >> n;
@@ -88,7 +83,6 @@ int main(int argc, char** argv) {
     {
         static int TimesFunctionWasCalled = 0;
         for (int i = 0; i < n; i++) {
-
             int num;
             std::cin >> num;
 
@@ -103,7 +97,6 @@ int main(int argc, char** argv) {
             std::cout << "Nu au fost facute modificari" << std::endl;
             return EXIT_SUCCESS;
         }
-
     }
 
     for (int i = 0; i < n; i++) {

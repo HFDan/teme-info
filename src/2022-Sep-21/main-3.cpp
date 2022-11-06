@@ -1,8 +1,8 @@
 /*
-* Să se scrie un subprogram C++ prin care se dublează prima cifră a unui număr
-* natural n transmis ca parametru.
-* Funcția întoarce rezultatul prin intermediul aceluiași parametru n.
-*/
+ * Să se scrie un subprogram C++ prin care se dublează prima cifră a unui număr
+ * natural n transmis ca parametru.
+ * Funcția întoarce rezultatul prin intermediul aceluiași parametru n.
+ */
 
 #include <cppminimal>
 

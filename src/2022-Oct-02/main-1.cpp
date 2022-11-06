@@ -7,4 +7,5 @@ int lmao(int num) {
     } while (num != 0);
 
     return rt;
-}int main() {return 0;}
+}
+int main() { return 0; }

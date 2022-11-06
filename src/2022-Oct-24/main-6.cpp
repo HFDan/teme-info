@@ -1,7 +1,6 @@
 #include <cppminimal>
 
 void citireVecRec(int vec[], int idx, int sz) {
-
     if (idx == sz - 1) {
         std::cin >> vec[idx];
     } else {
@@ -10,6 +9,4 @@ void citireVecRec(int vec[], int idx, int sz) {
     }
 }
 
-int main() {
-    return 0;
-}
+int main() { return 0; }

@@ -4,20 +4,16 @@
 #include <cppminimal>
 
 void awesomeFunc(int x) {
-  
-  int max = 0;
+    int max = 0;
 
-  do {
-    
-    const int cifra = x % 10;
-    if (cifra > max)
-      max = cifra;
+    do {
+        const int cifra = x % 10;
+        if (cifra > max) max = cifra;
 
-    x /= 10;
-  } while (x);
+        x /= 10;
+    } while (x);
 
-  std::cout << max;
-
+    std::cout << max;
 }
 
 int main() { nop(); }
