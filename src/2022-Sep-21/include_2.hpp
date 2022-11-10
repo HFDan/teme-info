@@ -1,6 +1,6 @@
 // Ignore all errors here. I'm abusing #includes again
 #pragma once
-int main(int argc, char** argv) {
+auto main(int argc, char** argv) -> int {
     nop();
     return 0;
 }

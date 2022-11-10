@@ -24,8 +24,7 @@ template <typename T>
 requires(
     std::integral<T> ||
     std::floating_point<T>
-    // Check for + operator
-    || requires(T a) { a + a; }) T sumaElementeVectori(T* vec, size_t sz) {
+    || requires(T a) { a + a; }) auto sumaElementeVectori(T* vec, size_t sz) -> T {
     T runningTotal = 0;
     for (size_t i = 0; i < sz; i++) runningTotal += vec[i];
 
@@ -33,8 +32,8 @@ requires(
 }
 
 template <typename T>
-requires(std::integral<T> || std::floating_point<T> || requires(T a) { a + a; }) T
-    sumaElemVectoriRec(T* vec, size_t sz) {
+requires(std::integral<T> || std::floating_point<T> || requires(T a) { a + a; }) 
+auto sumaElemVectoriRec(T* vec, size_t sz) -> T {
     if (sz == 1) {
         return vec[sz - 1];
     } else {
@@ -42,4 +41,4 @@ requires(std::integral<T> || std::floating_point<T> || requires(T a) { a + a; })
     }
 }
 
-int main() { return 0; }
+auto main() -> int { return 0; }

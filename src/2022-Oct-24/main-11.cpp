@@ -1,4 +1,4 @@
-int cmmdc(int a, int b) {
+auto cmmdc(int a, int b) -> int {
     if (a == b)
         return a;
     else if (a > b)
@@ -7,4 +7,4 @@ int cmmdc(int a, int b) {
         return cmmdc(a, b - a);
 }
 
-int main() { return 0; }
+auto main() -> int { return 0; }

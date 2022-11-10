@@ -24,7 +24,7 @@ Elementele tabloului care conțin cel puțin o cifră impară nu se modifică
 
 #include <cppminimal>
 
-bool verif(int num) {
+auto verif(int num) -> bool {
     while (num != 0) {
         if ((num % 10) % 2 != 0) return false;
 
@@ -68,7 +68,7 @@ void modif(int& x) {
     x = numaruPeDos;
 }
 
-int main(int argc, char** argv) {
+auto main(int argc, char** argv) -> int {
     std::ifstream file("atestat.in");
     std::ofstream out("atestat.out");
     long sz;

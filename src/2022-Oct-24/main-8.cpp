@@ -1,4 +1,4 @@
-int SumaCifreRec(int n) {
+auto SumaCifreRec(int n) -> int {
     if (n < 10) {
         return n % 10;
     } else {
@@ -6,4 +6,4 @@ int SumaCifreRec(int n) {
     }
 }
 
-int main() { return 0; }
+auto main() -> int { return 0; }

@@ -62,7 +62,7 @@ void inversareCifre(int& x, bool useStrings = false) {
     }
 }
 
-inline constexpr int nrDivizori(const int& x) {
+inline constexpr auto nrDivizori(const int& x) -> int {
     int div = 0;
 
     for (int i = 1; i <= x; i++)
@@ -71,7 +71,7 @@ inline constexpr int nrDivizori(const int& x) {
     return div;
 }
 
-int main(int argc, char** argv) {
+auto main(int argc, char** argv) -> int {
     freopen("atestat.in", "r", stdin);
     freopen("atestat.out", "w", stdout);
 

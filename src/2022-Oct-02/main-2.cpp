@@ -1,4 +1,4 @@
-int sumafactcif(int num) {
+auto sumafactcif(int num) -> int {
     int suma = 0;
     do {
         const int cifra = num % 10;
@@ -15,4 +15,4 @@ int sumafactcif(int num) {
 
     return suma;
 }
-int main() { return 0; }
+auto main() -> int { return 0; }

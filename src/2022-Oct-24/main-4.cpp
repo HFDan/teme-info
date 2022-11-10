@@ -1,4 +1,4 @@
-int cmmdcRec(int x, int y) {
+auto cmmdcRec(int x, int y) -> int {
     if (x == 0 || y == 0) return 0;
 
     if (x == y) return x;
@@ -9,4 +9,4 @@ int cmmdcRec(int x, int y) {
         return cmmdcRec(x, y - x);
 }
 
-int main() { return 0; }
+auto main() -> int { return 0; }

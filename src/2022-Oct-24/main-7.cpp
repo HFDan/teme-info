@@ -1,4 +1,4 @@
-int factorialRec(int n) {
+auto factorialRec(int n) -> int {
     if (n >= 1) {
         return n * factorialRec(n - 1);
     } else {
@@ -6,4 +6,4 @@ int factorialRec(int n) {
     }
 }
 
-int main() { return 0; }
+auto main() -> int { return 0; }

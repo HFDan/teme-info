@@ -5,7 +5,7 @@ int ExistaImpareRec(int n) {
 }
 
 #include <iostream>
-int main() { 
+auto main() -> int { 
     std::cout << ExistaImpareRec(2232);
     return 0;
 }

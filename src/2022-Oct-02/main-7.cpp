@@ -1,4 +1,4 @@
-int count(int a[], int n) {
+auto count(int a[], int n) -> int {
     int ma = 0;
     for (int i = 0; i < n; i++) {
         ma += a[i];
@@ -12,4 +12,4 @@ int count(int a[], int n) {
 
     return cont;
 }
-int main() { return 0; }
+auto main() -> int { return 0; }

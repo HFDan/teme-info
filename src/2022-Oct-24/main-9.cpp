@@ -1,6 +1,6 @@
 #include <cppminimal>
 
-int max(int vec[], int left, int right) {
+auto max(int vec[], int left, int right) -> int {
     if (left == right) {
         return vec[left];
     } else {
@@ -15,7 +15,7 @@ int max(int vec[], int left, int right) {
     }
 }
 
-int min(int vec[], int left, int right) {
+auto min(int vec[], int left, int right) -> int {
     if (left == right) {
         return vec[left];
     } else {
@@ -30,7 +30,7 @@ int min(int vec[], int left, int right) {
     }
 }
 
-int main() {
+auto main() -> int {
     int vec[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     std::cout << min(vec, 0, 9);
     return 0;

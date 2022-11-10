@@ -1,6 +1,6 @@
 #include <cppminimal>
 
-int sumaVector(std::span<int> vec, int left, int right) {
+auto sumaVector(std::span<int> vec, int left, int right) -> int {
     if (left != right) {
         int m = std::midpoint(left, right);
         int a = sumaVector(vec, left, m);
@@ -12,7 +12,7 @@ int sumaVector(std::span<int> vec, int left, int right) {
     return vec[left];
 }
 
-int multVector(std::span<int> vec, int left, int right) {
+auto multVector(std::span<int> vec, int left, int right) -> int {
     if (left != right) {
         int m = std::midpoint(left, right);
         int a = multVector(vec, left, m);
@@ -24,4 +24,4 @@ int multVector(std::span<int> vec, int left, int right) {
     return vec[left];
 }
 
-int main() { return 0; }
+auto main() -> int { return 0; }

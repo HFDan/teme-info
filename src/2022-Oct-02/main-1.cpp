@@ -1,4 +1,4 @@
-int lmao(int num) {
+auto lmao(int num) -> int {
     int rt = 0;
 
     do {
@@ -8,4 +8,4 @@ int lmao(int num) {
 
     return rt;
 }
-int main() { return 0; }
+auto main() -> int { return 0; }

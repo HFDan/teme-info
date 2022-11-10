@@ -16,7 +16,7 @@ void printMat() {
     }
 }
 
-kys_t findPos() {
+auto findPos() -> kys_t {
     // Chestia asta chiar suge
     auto maxN = [&](int& imax, int& jmax) -> void {
         int max = 0;
@@ -83,7 +83,7 @@ inline void interschimbareConformCerintei() {
     interschimbare2elemente(coordN.first, coordN.second, coordS.first, coordS.second);
 }
 
-int main(int argc, char** argv) {
+auto main(int argc, char** argv) -> int {
     // Citire e tehnic functie
     auto citire = [&]() -> void {
         std::cin >> n;

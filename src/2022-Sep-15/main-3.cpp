@@ -16,4 +16,4 @@ void awesomeFunc(int x) {
     std::cout << max;
 }
 
-int main() { nop(); }
+auto main() -> int { nop(); }

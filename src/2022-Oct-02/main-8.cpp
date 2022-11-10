@@ -1,6 +1,6 @@
 #include <cppminimal>
 
-int nr_sa(int** a, int n, int m) {
+auto nr_sa(int** a, int n, int m) -> int {
     int cont = 0;
 
     for (int i = 0; i < n; i++) {
@@ -46,4 +46,4 @@ int nr_sa(int** a, int n, int m) {
 
     return cont;
 }
-int main() { return 0; }
+auto main() -> int { return 0; }

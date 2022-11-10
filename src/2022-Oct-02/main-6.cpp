@@ -1,4 +1,4 @@
-int interval(int a[], int n) {
+auto interval(int a[], int n) -> int {
     int cont = 0;
     const int primu = a[0];
     const int doilea = a[n - 1];
@@ -10,4 +10,4 @@ int interval(int a[], int n) {
 
     return cont;
 }
-int main() { return 0; }
+auto main() -> int { return 0; }

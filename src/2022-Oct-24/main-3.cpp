@@ -1,4 +1,4 @@
-int nrCifreDiv3(int n) {
+auto nrCifreDiv3(int n) -> int {
     if (n < 10) return (n % 10) % 3 == 0 ? 1 : 0;
 
     if ((n % 10) % 3 == 0) {
@@ -8,4 +8,4 @@ int nrCifreDiv3(int n) {
     }
 }
 
-int main() { return 0; }
+auto main() -> int { return 0; }

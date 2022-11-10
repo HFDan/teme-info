@@ -6,4 +6,4 @@
 
 void func(int a, int b) { std::cout << (a > b ? a : b) << std::endl; }
 
-int main() { nop(); }
+auto main() -> int { nop(); }

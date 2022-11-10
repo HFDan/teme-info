@@ -9,4 +9,4 @@ void citireVecRec(int vec[], int idx, int sz) {
     }
 }
 
-int main() { return 0; }
+auto main() -> int { return 0; }

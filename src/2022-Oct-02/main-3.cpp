@@ -1,4 +1,4 @@
-int lmao(int n, int k) {
+auto lmao(int n, int k) -> int {
     int numarul = 0;
 
     // Dupa ce inversam, putem reconstrui numarul
@@ -19,4 +19,4 @@ int lmao(int n, int k) {
 
     return numarul;
 }
-int main() { return 0; }
+auto main() -> int { return 0; }

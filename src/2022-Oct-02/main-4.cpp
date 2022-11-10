@@ -1,4 +1,4 @@
-int lmao(int num) {
+auto lmao(int num) -> int {
     int frec[10] = {0};
 
     while (num) {
@@ -17,4 +17,4 @@ int lmao(int num) {
 
     return rec;
 }
-int main() { return 0; }
+auto main() -> int { return 0; }
