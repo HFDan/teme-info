@@ -7,7 +7,7 @@
 
 template <typename T>
 void func(T a, T b) {
-    static_assert(std::is_integral<T>::value);
+    static_assert(std::is_integral_v<T>);
 
     std::cout << a << b << std::endl;
 }

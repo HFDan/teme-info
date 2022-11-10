@@ -1,6 +1,6 @@
 #include <cppminimal>
 
-int sumaVector(int vec[], int left, int right) {
+int sumaVector(std::span<int> vec, int left, int right) {
     if (left != right) {
         int m = std::midpoint(left, right);
         int a = sumaVector(vec, left, m);
@@ -12,7 +12,7 @@ int sumaVector(int vec[], int left, int right) {
     return vec[left];
 }
 
-int multVector(int vec[], int left, int right) {
+int multVector(std::span<int> vec, int left, int right) {
     if (left != right) {
         int m = std::midpoint(left, right);
         int a = multVector(vec, left, m);
