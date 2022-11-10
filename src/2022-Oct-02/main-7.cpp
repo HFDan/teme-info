@@ -1,4 +1,6 @@
-auto count(int a[], int n) -> int {
+#include <cppminimal>
+
+auto count(std::span<int> a, int n) -> int {
     int ma = 0;
     for (int i = 0; i < n; i++) {
         ma += a[i];

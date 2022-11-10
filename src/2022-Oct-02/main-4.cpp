@@ -1,7 +1,9 @@
-auto lmao(int num) -> int {
-    int frec[10] = {0};
+#include <cppminimal>
 
-    while (num) {
+auto lmao(int num) -> int {
+    std::array<int, 10> frec{};
+
+    while (num != 0) {
         frec[num % 10]++;
 
         num /= 10;

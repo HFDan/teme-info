@@ -1,6 +1,6 @@
 #include <cppminimal>
 
-void citireVecRec(int vec[], int idx, int sz) {
+void citireVecRec(std::span<int> vec, int idx, int sz) {
     if (idx == sz - 1) {
         std::cin >> vec[idx];
     } else {

@@ -1,6 +1,6 @@
 #include <cppminimal>
 
-auto max(int vec[], int left, int right) -> int {
+auto max(std::span<int> vec, int left, int right) -> int {
     if (left == right) {
         return vec[left];
     } else {
@@ -15,7 +15,7 @@ auto max(int vec[], int left, int right) -> int {
     }
 }
 
-auto min(int vec[], int left, int right) -> int {
+auto min(std::span<int> vec, int left, int right) -> int {
     if (left == right) {
         return vec[left];
     } else {

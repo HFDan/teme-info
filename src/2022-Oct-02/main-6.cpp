@@ -1,4 +1,6 @@
-auto interval(int a[], int n) -> int {
+#include <cppminimal>
+
+auto interval(std::span<int> a, int n) -> int {
     int cont = 0;
     const int primu = a[0];
     const int doilea = a[n - 1];

@@ -6,7 +6,7 @@
 static int mat[101][101];
 static int n;
 
-typedef std::tuple<std::pair<int, int>, std::pair<int, int>, std::pair<int, int>, std::pair<int, int>> kys_t;
+using kys_t = std::tuple<std::pair<int, int>, std::pair<int, int>, std::pair<int, int>, std::pair<int, int>>;
 
 void printMat() {
     for (int rand = 1; rand <= n; rand++) {
@@ -62,7 +62,10 @@ auto findPos() -> kys_t {
                 }
     };
 
-    std::pair<int, int> N, S, V, E;
+    std::pair<int, int> N;
+    std::pair<int, int> S;
+    std::pair<int, int> V;
+    std::pair<int, int> E;
     maxN(N.first, N.second);
     maxS(S.first, S.second);
     maxE(E.first, E.second);

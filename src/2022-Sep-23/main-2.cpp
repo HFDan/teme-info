@@ -62,7 +62,7 @@ void inversareCifre(int& x, bool useStrings = false) {
     }
 }
 
-inline constexpr auto nrDivizori(const int& x) -> int {
+constexpr auto nrDivizori(const int& x) -> int {
     int div = 0;
 
     for (int i = 1; i <= x; i++)
@@ -78,7 +78,7 @@ auto main(int argc, char** argv) -> int {
     int n;
     std::cin >> n;
 
-    int* const arr = new int[n];
+    auto* const arr = new int[n];
 
     {
         static int TimesFunctionWasCalled = 0;

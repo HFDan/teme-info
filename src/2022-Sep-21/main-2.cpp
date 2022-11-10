@@ -8,9 +8,7 @@
 
 void func(uint32 num, uint32& pare, uint32& impare) {
     do {
-        const int32 cifra = num % 10;
-
-        if (cifra % 2 == 0)
+        if (const int32 cifra = num % 10; cifra % 2 == 0)
             pare += cifra;
         else
             impare += cifra;
