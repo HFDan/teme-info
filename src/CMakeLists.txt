@@ -12,7 +12,7 @@ foreach(file_path ${files})
     string(REPLACE "main" "" filename ${filename})
     string(REPLACE "-" "" filename ${filename})
 
-    add_executable("${new_dir}${filename}" ${file_path})
+    add_executable("${new_dir}${filename}" ${file_path} ${CMAKE_SOURCE_DIR}/include/debug.cpp)
     set_target_properties("${new_dir}${filename}" PROPERTIES OUTPUT_NAME "${filename}")
     set_target_properties("${new_dir}${filename}" PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/src/${new_dir}")
 endforeach(file_path ${files})

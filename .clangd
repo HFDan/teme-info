@@ -16,3 +16,4 @@ Diagnostics:
       - "readability-braces-around-statements"
       - "misc-no-recursion"
       - "hicpp-braces-around-statements"
+      - "hicpp-vararg"
