@@ -2,11 +2,15 @@
 
 constexpr auto strSize = 100;
 
-int main(int argc, char** argv) {
+constexpr auto isVowel(const char character) -> bool {
+    return (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u'); 
+}
+
+auto main(int argc, char** argv) -> int {
     
     char str[strSize] = {0};
     
-    std::cin.getline(str, strSize);
+    std::cin.getline((char*)str, strSize);
     
     int counter = 0;
 
@@ -14,13 +18,8 @@ int main(int argc, char** argv) {
         const auto prevch = str[i-1];
         const auto nextch = str[i+1];
         const auto ch = str[i];
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-            // Check prevch
-            if (prevch != 'a' && prevch != 'e' && prevch != 'i' && prevch != 'o' && prevch != 'u' && !static_cast<bool>(std::isspace(prevch)) && nextch != '\0') {
-                if (nextch != 'a' && nextch != 'e' && nextch != 'i' && nextch != 'o' && nextch != 'u' && !static_cast<bool>(std::isspace(nextch)) && nextch != '\0') {
+        if (isVowel(ch) && !isVowel(prevch) && !isVowel(nextch) && !static_cast<bool>(std::isspace(prevch)) && !static_cast<bool>(std::isspace(nextch)) && nextch != '\0') {
                     counter++;
-                }
-            }
         }
     }
     
