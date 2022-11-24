@@ -1,4 +1,5 @@
 #include <debug.hpp>
+#include <boost/core/verbose_terminate_handler.hpp>
 #ifndef _WIN32
 #include <cxxabi.h>
 #include <execinfo.h>
@@ -6,9 +7,43 @@
 
 [[noreturn]]
 void term_handler() noexcept {
-    std::cerr << "Error encountered, terminating...\n";
+    std::set_terminate( nullptr );
+
+    try
+    {
+        throw;
+    }
+    catch( std::exception const& ex )
+    {
+        char const * typeid_name = typeid( ex ).name();
+
+        int status = -1;
+        char* ret = abi::__cxa_demangle(typeid_name, nullptr, nullptr, &status);
+
+        if( ret != nullptr )
+        {
+            typeid_name = ret;
+        }
+
+        std::fprintf( stderr,
+            "terminating after throwing an exception:\n\n"
+            "      type: %s\n"
+            "    what(): %s\n\n",
+            typeid_name,
+            ex.what()
+        );
+        delete[] ret;
+    }
+    catch( ... )
+    {
+        std::fputs( "terminating after throwing an unknown exception\n", stderr );
+    }
+
+    
+    std::fflush( stdout );
+
     printBacktrace();
-    abort();
+    std::abort();
 }
 
 void printBacktrace() {
