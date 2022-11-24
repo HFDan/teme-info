@@ -10,6 +10,7 @@ set(IS_DEBUG_BUILD CMAKE_BUILD_TYPE STREQUAL "Debug")
 if (${IS_DEBUG_BUILD})
     add_link_options(-rdynamic)
 endif ()
+file(WRITE ${CMAKE_BINARY_DIR}/.gitignore "*")
 
 include_directories("${CMAKE_SOURCE_DIR}/include")
 add_subdirectory("${CMAKE_SOURCE_DIR}/src")

@@ -15,7 +15,7 @@ auto main(int argc, char** argv) -> int {
     for (auto* it = (char*)str; *it != '\0'; it++) {
         const auto character = *it;
         if (isVowel(character)) {
-            *it -= 32;
+            *it -= 32; // ASCII e plin de relatii matematice. Daca scazi 32 dintr-un caracter mare, vei ajunge la o litera mica.
         }
     }
     

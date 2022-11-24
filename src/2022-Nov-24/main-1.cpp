@@ -2,6 +2,13 @@
 
 constexpr auto strSize = 100;
 
+/**
+ * @brief Verifica daca un caracter e vocala
+ * 
+ * @param character 
+ * @return true 
+ * @return false 
+ */
 constexpr auto isVowel(const char character) -> bool {
     return (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u'); 
 }
