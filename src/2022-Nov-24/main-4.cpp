@@ -13,7 +13,7 @@ constexpr auto strSize = 200;
  * @param cond Conditia. Pointer catre o functie de tip bool(char) care returneaza true daca carecterul trebuie sters
  */
 template <class callback>
-void remove_on_condition(char* str, size_t size, callback cond) {
+void remove_on_condition(char* str, size_t size, callback cond) {    
     // decltype e o functie speciala. Returneaza *TIPUL* unei variabile.
     // De exemplu:
     // pentru int x
@@ -30,6 +30,7 @@ void remove_on_condition(char* str, size_t size, callback cond) {
             i--;
         }
     }
+    str[size] = '\0'; // Force null termination
 }
 
 auto main(int argc, char** argv) -> int {
@@ -40,9 +41,9 @@ auto main(int argc, char** argv) -> int {
     remove_on_condition((char*)str, strlen((char*)str), 
     // Aceasta este o "functie anonima". Poate fi folosita drept parametru in alte functii.
     // https://learn.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-170
-    [](char chr) {
-        return (chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u');
-    }
+        [](char chr) {
+            return (chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u');
+        }
     );
 
     std::cout << (char*)str << std::endl;

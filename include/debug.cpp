@@ -18,7 +18,11 @@ void term_handler() noexcept {
         char const * typeid_name = typeid( ex ).name();
 
         int status = -1;
+        #ifndef _WIN32
         char* ret = abi::__cxa_demangle(typeid_name, nullptr, nullptr, &status);
+        #else
+        char* ret = typeid_name;
+        #endif // !_WIN32
 
         if( ret != nullptr )
         {
@@ -27,12 +31,14 @@ void term_handler() noexcept {
 
         std::fprintf( stderr,
             "terminating after throwing an exception:\n\n"
-            "      type: %s\n"
-            "    what(): %s\n\n",
+            "\ttype: %s\n"
+            "\twhat(): %s\n\n",
             typeid_name,
             ex.what()
         );
+        #ifndef _WIN32
         delete[] ret;
+        #endif
     }
     catch( ... )
     {
