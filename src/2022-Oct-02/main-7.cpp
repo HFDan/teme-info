@@ -1,15 +1,15 @@
 #include <cppminimal>
 
-auto count(std::span<int> a, int n) -> int {
-    int ma = 0;
-    for (int i = 0; i < n; i++) {
-        ma += a[i];
+auto count(std::span<int> a, size_t n) -> int {
+    int mean = 0;
+    for (size_t i = 0; i < n; i++) {
+        mean += a[i];
     }
-    ma /= n;
+    mean /= n;
 
     int cont = 0;
-    for (int i = 0; i < n; i++) {
-        if (a[i] >= ma) cont++;
+    for (size_t i = 0; i < n; i++) {
+        if (a[i] >= mean) cont++;
     }
 
     return cont;

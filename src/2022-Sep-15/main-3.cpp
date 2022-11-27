@@ -7,11 +7,10 @@ void awesomeFunc(int x) {
     int max = 0;
 
     do {
-        const int cifra = x % 10;
-        if (cifra > max) max = cifra;
+        if (const int cifra = x % 10; cifra > max) max = cifra;
 
         x /= 10;
-    } while (x);
+    } while (x > 0);
 
     std::cout << max;
 }

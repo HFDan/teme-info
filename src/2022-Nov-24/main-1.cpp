@@ -24,8 +24,8 @@ auto main(int argc, char** argv) -> int {
     for (int i = 1; i < strSize - 1 || str[i + 1] == '\0'; i++) {
         const auto prevch = str[i-1];
         const auto nextch = str[i+1];
-        const auto ch = str[i];
-        if (isVowel(ch) && !isVowel(prevch) && !isVowel(nextch) && !static_cast<bool>(std::isspace(prevch)) && !static_cast<bool>(std::isspace(nextch)) && nextch != '\0') {
+        const auto character = str[i];
+        if (isVowel(character) && !isVowel(prevch) && !isVowel(nextch) && !static_cast<bool>(std::isspace(prevch)) && !static_cast<bool>(std::isspace(nextch)) && nextch != '\0') {
                     counter++;
         }
     }

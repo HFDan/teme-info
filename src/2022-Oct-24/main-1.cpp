@@ -1,6 +1,6 @@
 #include <cppminimal>
 
-int ExistaImpareRec(int n) {
+auto ExistaImpareRec(int n) -> int {
     if ((n % 10) % 2 != 0) return 1;
     if (n == 0) return 0;
     return 0 + ExistaImpareRec(n / 10);

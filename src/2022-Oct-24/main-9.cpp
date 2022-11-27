@@ -15,18 +15,18 @@ auto max(std::span<int> vec, int left, int right) -> int {
     }
 }
 
-auto min(std::span<int> vec, int left, int right) -> int {
+auto min(std::span<int> vec, size_t left, size_t right) -> int {
     if (left == right) {
         return vec[left];
     } else {
-        int m = std::midpoint(left, right);
-        int a = min(vec, left, m);
-        int b = min(vec, m + 1, right);
+        size_t mid = std::midpoint(left, right);
+        int first = min(vec, left, mid);
+        int second = min(vec, mid + 1, right);
 
-        if (a < b)
-            return a;
+        if (first < second)
+            return first;
         else
-            return b;
+            return second;
     }
 }
 

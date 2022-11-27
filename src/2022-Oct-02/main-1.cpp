@@ -1,11 +1,11 @@
 auto lmao(int num) -> int {
-    int rt = 0;
+    int ret = 0;
 
     do {
-        rt += num % 10;
+        ret += num % 10;
         num /= 10;
     } while (num != 0);
 
-    return rt;
+    return ret;
 }
 auto main() -> int { return 0; }

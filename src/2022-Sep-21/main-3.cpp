@@ -6,7 +6,7 @@
 
 #include <cppminimal>
 
-void func(uint32& num) {
+void func(int32& num) {
     auto str = std::to_string(num);
 
     str = str[0] + str;

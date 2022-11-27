@@ -11,7 +11,7 @@ concept isStdContainerCompatible =
 
 template <typename T>
 requires isStdContainerCompatible<T>
-typename T::value_type sumaElementeVectori(T vec) {
+auto sumaElementeVectori(T vec) -> typename T::value_type {
     typename T::value_type runningTotal = 0;
     for (auto it : vec) {
         runningTotal += it;
@@ -21,9 +21,9 @@ typename T::value_type sumaElementeVectori(T vec) {
 }
 
 template <typename T>
-requires(std::integral<T> || std::floating_point<T> || requires(T a) { a + a; })
-
-    auto sumaElementeVectori(std::span<T> vec) -> T {
+requires(std::integral<T> || std::floating_point<T> || requires(T a) {
+    a + a;
+}) auto sumaElementeVectori(std::span<T> vec) -> T {
     T runningTotal = 0;
     for (size_t i = 0; i < vec.size(); i++) runningTotal += vec[i];
 

@@ -1,10 +1,10 @@
-auto cmmdc(int a, int b) -> int {
-    if (a == b)
-        return a;
-    else if (a > b)
-        return cmmdc(a - b, b);
+auto cmmdc(int num1, int num2) -> int {
+    if (num1 == num2)
+        return num1;
+    else if (num1 > num2)
+        return cmmdc(num1 - num2, num2);
     else
-        return cmmdc(a, b - a);
+        return cmmdc(num1, num2 - num1);
 }
 
 auto main() -> int { return 0; }

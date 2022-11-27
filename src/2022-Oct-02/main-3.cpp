@@ -4,7 +4,7 @@ auto lmao(int n, int k) -> int {
     // Dupa ce inversam, putem reconstrui numarul
     {
         int ogl = 0;
-        while (n) {
+        while (n > 0) {
             ogl = ogl * 10 + n % 10;
 
             n /= 10;

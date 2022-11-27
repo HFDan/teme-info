@@ -1,6 +1,6 @@
 #include <cppminimal>
 
-auto lmao(int num) -> int {
+auto lmao(size_t num) -> int {
     std::array<int, 10> frec{};
 
     while (num != 0) {

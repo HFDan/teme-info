@@ -1,11 +1,11 @@
 #include <cppminimal>
 
-void citireVecRec(std::span<int> vec, int idx, int sz) {
-    if (idx == sz - 1) {
+void citireVecRec(std::span<int> vec, size_t idx, size_t size) {
+    if (idx == size - 1) {
         std::cin >> vec[idx];
     } else {
         std::cin >> vec[idx];
-        return citireVecRec(vec, idx + 1, sz);
+        return citireVecRec(vec, idx + 1, size);
     }
 }
 

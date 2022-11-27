@@ -10,9 +10,6 @@
 void P(uint32& n, const byte& c) {
     auto str = std::to_string(n);
 
-    // Unintuitively, std::remove and std::remove_if do not remove anything,
-    // they just move the non-passing elements to the end of the container.
-    // We use std::string::erase to resize the container.
     std::erase_if(str, [c](byte x) -> bool { return x == c; });
 
     n = std::stoi(str);

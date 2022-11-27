@@ -1,24 +1,24 @@
 #include <cppminimal>
 
-auto sumaVector(std::span<int> vec, int left, int right) -> int {
+auto sumaVector(std::span<int> vec, size_t left, size_t right) -> int {
     if (left != right) {
-        int m = std::midpoint(left, right);
-        int a = sumaVector(vec, left, m);
-        int b = sumaVector(vec, m + 1, right);
+        size_t mid = std::midpoint(left, right);
+        int first = sumaVector(vec, left, mid);
+        int second = sumaVector(vec, mid + 1, right);
 
-        return a + b;
+        return first + second;
     }
 
     return vec[left];
 }
 
-auto multVector(std::span<int> vec, int left, int right) -> int {
+auto multVector(std::span<int> vec, size_t left, size_t right) -> int {
     if (left != right) {
-        int m = std::midpoint(left, right);
-        int a = multVector(vec, left, m);
-        int b = multVector(vec, m + 1, right);
+        size_t mid = std::midpoint(left, right);
+        int first = multVector(vec, left, mid);
+        int second = multVector(vec, mid + 1, right);
 
-        return a * b;
+        return first * second;
     }
 
     return vec[left];

@@ -95,6 +95,7 @@ auto main(int argc, char** argv) -> int {
 
         if (!TimesFunctionWasCalled) {
             std::cout << "Nu au fost facute modificari" << std::endl;
+            delete[] arr;
             return EXIT_SUCCESS;
         }
     }
