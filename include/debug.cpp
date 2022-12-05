@@ -1,59 +1,51 @@
-#include <debug.hpp>
 #include <boost/core/verbose_terminate_handler.hpp>
+#include <debug.hpp>
 #ifndef _WIN32
 #include <cxxabi.h>
 #include <execinfo.h>
 #endif
 
-[[noreturn]]
-void term_handler() noexcept {
-    std::set_terminate( nullptr );
+[[noreturn]] void term_handler() noexcept {
+    std::set_terminate(nullptr);
 
-    try
-    {
+    try {
         throw;
-    }
-    catch( std::exception const& ex )
-    {
-        char const * typeid_name = typeid( ex ).name();
+    } catch (std::exception const& ex) {
+        char const* typeid_name = typeid(ex).name();
 
         int status = -1;
-        #ifndef _WIN32
+#ifndef _WIN32
         char* ret = abi::__cxa_demangle(typeid_name, nullptr, nullptr, &status);
-        #else
-        char* ret = typeid_name;
-        #endif // !_WIN32
+#else
+        const char* ret = typeid_name;
+#endif  // !_WIN32
 
-        if( ret != nullptr )
-        {
+        if (ret != nullptr) {
             typeid_name = ret;
         }
 
-        std::fprintf( stderr,
+        std::fprintf(
+            stderr,
             "terminating after throwing an exception:\n\n"
             "\ttype: %s\n"
             "\twhat(): %s\n\n",
             typeid_name,
-            ex.what()
-        );
-        #ifndef _WIN32
+            ex.what());
+#ifndef _WIN32
         delete[] ret;
-        #endif
-    }
-    catch( ... )
-    {
-        std::fputs( "terminating after throwing an unknown exception\n", stderr );
+#endif
+    } catch (...) {
+        std::fputs("terminating after throwing an unknown exception\n", stderr);
     }
 
-    
-    std::fflush( stdout );
+    std::fflush(stdout);
 
     printBacktrace();
     std::abort();
 }
 
 void printBacktrace() {
-    #ifndef _WIN32
+#ifndef _WIN32
     void* arr[20];
     char** strs;
 
@@ -63,12 +55,11 @@ void printBacktrace() {
     if (strs != nullptr) {
         fprintf(stderr, "Traceback (most recent call first):\n");
         for (decltype(sz) i = 1; i < sz; i++) {
-            char *begin_name = nullptr;
-            char *begin_offset = nullptr;
-            char *end_offset = nullptr;
+            char* begin_name = nullptr;
+            char* begin_offset = nullptr;
+            char* end_offset = nullptr;
 
             for (char* p = strs[i]; *p; ++p) {
-
                 if (*p == '(')
                     begin_name = p;
                 else if (*p == '+')
@@ -98,7 +89,7 @@ void printBacktrace() {
             }
         }
     }
-    
+
     delete[] strs;
-    #endif
+#endif
 }
