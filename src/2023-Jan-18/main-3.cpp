@@ -9,14 +9,14 @@ auto main(int argc, char** argv) -> int {
     std::cin.getline(text, 200);
 
     int addto = 0;
-    for (size_t i = 0; i < strlen(text); i++) {
-        if (isVowel(text[i])) {
-            cop[addto] = text[i];
+    for (auto* ptr = text; *ptr != '\0'; ptr++) {
+        if (isVowel(*ptr)) {
+            cop[addto] = *ptr;
             cop[addto + 1] = 'p';
-            cop[addto + 2] = text[i];
+            cop[addto + 2] = *ptr;
             addto += 3;
         } else {
-            cop[addto] = text[i];
+            cop[addto] = *ptr;
             addto++;
         }
     }
