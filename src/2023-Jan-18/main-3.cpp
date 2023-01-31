@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-inline bool isVowel(char ch) { return strchr("AEIOUaeiou", ch) != nullptr; }
+constexpr bool isVowel(char ch) { return strchr("AEIOUaeiou", ch) != nullptr; }
 
 auto main(int argc, char** argv) -> int {
 
