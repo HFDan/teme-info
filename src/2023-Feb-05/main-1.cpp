@@ -31,9 +31,9 @@ auto main(int argc, char** argv) -> int {
             
             if (const std::size_t found_idx = found-text; text[found_idx+1] != '\n' && text[found_idx+1] != '\0') {
                 remove_at_index(text, text_len+1, found_idx);
-                found-=1; // If we found smth, we want to check for delimiters that are one next to each other
-                          // Is this hacky? Yes
-                          // Does it work? also yes
+                found -= 1; // If we found smth, we want to check for delimiters that are one next to each other
+                            // Is this hacky? Yes
+                            // Does it work? also yes
             }
 
             found = strchr(found+1, delim);
