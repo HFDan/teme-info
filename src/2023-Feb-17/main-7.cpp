@@ -28,8 +28,8 @@ auto main(int argc, char** argv) -> int {
     point p3;
     std::cin >> p1 >> p2 >> p3;
     
-    std::cout << "P1 -> P2" << dist(p1, p2) << std::endl;
-    std::cout << "P1 -> P3" << dist(p1, p3) << std::endl;
-    std::cout << "P2 -> P3" << dist(p2, p3) << std::endl;
+    std::cout << "P1 <-> P2" << dist(p1, p2) << std::endl;
+    std::cout << "P1 <-> P3" << dist(p1, p3) << std::endl;
+    std::cout << "P2 <-> P3" << dist(p2, p3) << std::endl;
     return 0;
 }

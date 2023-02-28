@@ -18,26 +18,26 @@ auto& operator<<(std::ostream& stream, const TriangleTypes type) {
     switch (type) {
         using enum TriangleTypes;
         case equilateral:
-            std::cout << "Echilateral";
+            stream << "Echilateral";
             break;
         
         case isosceles:
-            std::cout << "Isoscel";
+            stream << "Isoscel";
             break;
 
         case right:
-            std::cout << "Dreptunghic";
+            stream << "Dreptunghic";
             break;
 
         case other:
-            std::cout << "Oarecare";
+            stream << "Oarecare";
             break;
     }
 
     return stream;
 }
 
-auto& operator>>(std::istream& stream, point& pt){
+auto& operator>>(std::istream& stream, point& pt) {
     stream >> pt.x >> pt.y;
     return stream;
 } 
